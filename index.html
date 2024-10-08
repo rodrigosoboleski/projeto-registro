@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Usuários</h1>
+        <form id="userForm">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Idade:</label>
+                <input type="number" id="age" required>
+            </div>
+            <div class="form-group">
+                <label for="course">Curso:</label>
+                <input type="text" id="course" required>
+            </div>
+            <button type="submit">Adicionar usuário</button>
+        </form>
+        <button id="listBtn">Listar Usuários</button>
+        <div id="userList" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
